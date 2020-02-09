@@ -1,0 +1,259 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.top-bar{
+	min-height: 40px;
+	height: auto;
+	width: 100%;
+}
+.topbar-note{
+	max-width: 185px;
+	float: left;
+	padding: 9px 0 0 25px;
+	position: relative;
+}
+.topbar-button{
+	/*max-width: 185px;*/
+	float: right;
+	padding: 3px 10px 0 0;
+	position: relative;
+}
+
+.top-bar span{
+	font-size: 15px;
+}
+.appoinment-button{
+	position: relative;
+	background-color: #32B6CD ;
+	float: right;
+	padding: 4px 15px 0 15px;
+	/*margin: auto*/;
+	border-radius: 25px;
+	border-style: solid;
+	width: 100%;
+	max-width: 200px;
+	min-height: 35px;
+    height: auto;
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+.appoinment-button:hover{
+	background-color: #ffffff;
+    color: #32B6CD ;
+    text-decoration: none;
+
+}
+.navbar-section{
+	display: inline-block;
+	background-position:center;
+	width:100%;
+	min-height: 165px;
+	background-image: url('../Images/mediservice-Banner.jpg');
+	/*background-position: center;*/
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.navbar {
+	/*overflow: hidden;*/
+	width: 100%;
+	height: 60px;
+	position: inline;
+  	padding: 12px 0;
+  	background-color: rgba(0,172,230,0.6);
+  	box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.5);
+}
+#navbar_logo {
+	width:65%;
+	/*height: 100%;*/
+	max-width: 270px;
+    max-height: 90px;
+    padding-left: 10px;
+}
+#navbar_supported_content {
+  	position: absolute;
+  	width: 100%;
+  	top: 60px;
+}
+.navbar-nav {
+  	border-top: 0px solid #340166;
+  	border-bottom: 0px solid #340166;
+  	text-align: center;
+ }
+.navbar-toggler-icon {
+  position: absolute;
+  right: 12px;
+  height:50%;
+  width:45px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler-icon:hover{
+	box-shadow: 0px 10px 10px 0px rgba(255,255,255,0.5);
+}
+.nav-item {
+  	background-color: #32B6CD ;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+}
+.nav-item:hover {
+  	background-color: #ffffff;
+  	cursor: pointer;
+}
+.nav-item a {
+  	color: #ffffff;
+  	font-weight: 500px;
+  	font-size: 16px;
+  	/*text-transform: uppercase;*/
+  	text-decoration: none;
+}
+.nav-item:hover a {
+  color: #32B6CD ;
+  text-decoration: none;
+}
+.main-article{
+	padding: 20px;
+}
+#article_heading_text{
+	font-weight: 500px;
+	font-size: 23px;
+}
+#article_heading_logo{
+	/*display: inline;*/
+	width:70px;
+	height:14px;
+	padding:0 10px;
+}
+#article_body_logo{
+	display: none;
+}
+.article-content-paragraph{
+	padding-top: 9px;
+	line-height: 1.7;
+	font-size: 15px;
+}
+.tab-container{
+	width: 100%;
+
+	margin:0 auto;
+	/*border:1px solid red;*/
+}
+#tab_logo{
+	float: left;
+	width: 30px;
+	height: 32px;
+}
+#tab_logo{
+	float: left;
+	width: 30px;
+	height: 32px;
+}
+.tab-column{
+	display: flex;
+	flex-direction: row;
+	/*justify-content: flex-end;*/
+	align-items: center;
+	width:50%;
+	height: auto;
+	float: left;
+	padding:14px 0;
+	margin:0 auto;
+	/*border:1px solid black;*/
+}
+.left
+{
+	justify-content: flex-end;
+	
+}
+.tab-column a{
+	font-size: 15px;
+	padding-left: 10px;
+	text-decoration: none;
+	color: #000;
+
+}
+.tab-column a:hover{
+	color: #32B6CD ;
+	text-decoration: none;
+}
+
+.main-container {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	/*text-align: center;*/
+	align-items: center
+    padding: 0 15px 30px 15px;
+    margin: 38px auto 0 auto;
+}
+.dept-header{
+	display: inline;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	font-size: 22px;
+	color: #32B6CD ;
+	margin-bottom: 5px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.item-container {
+    margin: 30px auto 0;
+    height: auto;
+    overflow-y: auto;
+    text-align: center;
+}
+.dept-item img{
+	width:40%;
+}
+#neurology_logo{
+	width: 18%;
+}
+#gastrology-logo{
+	
+}
+#cardiology_logo{
+	width:26%;
+}
+#more_logo{
+	width: 100%;
+}
+.dept-item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dept-item span{
+	padding: 15px 0 10px 0;
+	color: #32B6CD;
+	font-size: 17px;
+	font-weight: bolder;
+}
+img {
+    vertical-align: middle;
+}
+div{
+	display: block;
+}
+.dashed-line{
+	margin:20px 13px 0 13px;
+	height: 1px;
+	padding-left:10px;
+  background: repeating-linear-gradient(to right, #32B6CD  0,#32B6CD  10px, #ffffff 10px, #ffffff 17px)
+}
+.copyright-info{
+	padding-top: 15px;
+	padding-bottom: 5px;
+    /*margin: 10px 0 0;*/
+    /*border-top: 1px dashed #ffffff;*/
+    text-align: center;
+    /*color:#000;*/
+    opacity: 80%;
+    font-size:12.5px;
+}
