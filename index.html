@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<meta name="author" content="Manomoy Biswas">
 	<title>Medi Service</title>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./assets/CSS/mediservice-styles.css">
 </head>
 <body>
 	<header>
-		<div class="top-bar">
-			<div class="topbar-note">
+		<div class="tool-bar">
+			<div class="toolbar-note">
 				<span>We are open 24hrs.</span>
 			</div>
-			<div class="topbar-button">
+			<div class="toolbar-button">
 				<a class="appoinment-button" href='#'>Make an appointment</a>
 			</div>
 		</div>
@@ -34,99 +33,106 @@
 	        	<button class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#navbar_supported_content"> </button>
 
 	      		<div class="collapse navbar-collapse" id="navbar_supported_content">
-	        		<ul class="nav navbar-nav ml-auto">
-		          		<li class="nav-item active"><a href="#">Home</a></li>
-		          		<li class="nav-item"><a href="#">Services</a></li>
-		          		<li class="nav-item"><a href="#">About</a></li>
-		          		<li class="nav-item"><a href="#">Contact</a></li>
+	        		<ul class="navbar-nav">
+		          		<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+		          		<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+		          		<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+		          		<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
 	        		</ul>
 	      		</div>
 	    	</nav>
 		</section>
 	</header>
 	<main>
-		<article class="main-article">
-			<span id="article_heading_text">Why Choose Us</span>
-			<img src="./assets/Images/ecg.png" alt="ecg-logo" id="article_heading_logo">
-			<content class="main-article-content">
-					<img src="./assets/Images/stetho.png" alt="stetho-logo" id="article_body_logo">
-					<p class="article-content-paragraph">
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-					</p>
-					<div class="tab-container">
-						<div class="tab-column">
-							<img src="./assets/Images/tab.png" href="#" alt="tablet-logo" id="tab_logo"> 
-							<a href="#" >Lorem Ipsum</a>						
-						</div>
-						<div class="tab-column left">
-							<img src="./assets/Images/tab.png" href="#" alt="tablet-logo" id="tab_logo"> 
-							<a href="#" >Lorem Ipsum</a>
-						</div>
-
-						<div class="tab-column">
-							<img src="./assets/Images/tab.png" href="#" alt="tablet-logo" id="tab_logo"> 
-							<a href="#" >Lorem Ipsum</a>						
-						</div>
-						<div class="tab-column left">
-							<img src="./assets/Images/tab.png" href="#" alt="tablet-logo" id="tab_logo"> 
-							<a href="#" >Lorem Ipsum</a>						
-						</div>
-					</div>
-			</content>
-		</article>
-		<section class="main-container">
-		  		<div class="dept-header">
-					<img src="./assets/Images/ecg.png" alt="ecg-logo" id="article_heading_logo">
-					<span>Our Departments</span>
-					<img src="./assets/Images/ecg.png" alt="ecg-logo" id="article_heading_logo">
+		<section class="choose-us">
+			<div class="article-header">
+				<h4 id="article_heading_text">Why Choose Us</h4>
+				<img src="./assets/Images/ecg.png" alt="ecg-logo" class="article_heading_logo">
+			</div>
+			<div class="article-body">
+				<div class="article-image">
+					 <img src="./assets/Images/stetho.png" alt="stetho-logo" id="article_body_logo">
 				</div>
-				<div class="row">
-				  	<div class="col-md-3">
-				    	<div class="item-container">
-					      	<a class="dept-item" href="#">
-					      		<img src="./assets/Images/medicine.png" alt="medicine-logo" id="medicine_logo">
-					    		<span>Medicine</span>
-					    	</a>
-				    	</div>
-				  	</div>
+				<p class="article-content-paragraph">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+				<div class="article-item-container">
+					<div class="article-item-column">
+						<a href="#">
+							<img src="./assets/Images/tab.png" alt="tablet-logo" class="article-item_logo"> 
+							<span>Lorem Ipsum</span>
+						</a>					
+					</div>
+					<div class="article-item-column">
+						<a href="#">
+							<img src="./assets/Images/tab.png" alt="tablet-logo" class="article-item_logo"> 
+							<span>Lorem Ipsum</span>
+						</a>
+					</div>
 
-				  	<div class="col-md-3">
-				    	<div class="item-container">
-				      		<a class="dept-item" href="#">
-				      			<img src="./assets/Images/brain.png" alt="neurology-logo" id="neurology_logo">
-				      			<span>Neurology</span>
-				      		</a>
-				    	</div>
-				  	</div>
-
-				  	<div class="col-md-3">
-				    	<div class="item-container">
-				      		<a class="dept-item" href="#">
-				      			<img src="./assets/Images/Gastroenterology.png" alt="gastrology-logo" id="gastrology_logo">
-				      			<span>Gastrology</span>
-				      		</a>
-				     	</div>
-				  	</div>
-
-				  	<div class="col-md-3">
-				    	<div class="item-container">
-				      		<a class="dept-item" href="#">
-				      			<img src="./assets/Images/cardiology.png" alt="cardiology-logo" id="cardiology_logo">
-				      			<span>Cardiology</span>
-				      		</a>
-				    	</div>
-				  	</div>
-
-				  	<div class="col-md-3">
-				    	<div class="item-container">
-				      		<a class="dept-item" href="#">
-				      			<img src="./assets/Images/more.png" alt="more-logo" id="more_logo">
-				      		</a>
-				    	</div>
-				 	</div>
+					<div class="article-item-column">
+						<a href="#">
+							<img src="./assets/Images/tab.png" alt="tablet-logo" class="article-item_logo"> 
+							<span>Lorem Ipsum</span>
+						</a>					
+					</div>
+					<div class="article-item-column">
+						<a href="#">
+							<img src="./assets/Images/tab.png" alt="tablet-logo" class="article-item_logo"> 
+							<span>Lorem Ipsum</span>
+						</a>					
+					</div>
 				</div>
 			</div>
-			</section>
+		</section>
+		<section class="dept-container">
+	  		<div class="dept-header">
+				<img src="./assets/Images/ecg.png" alt="ecg-logo" class="article_heading_logo">
+				<h5>Our Departments</h5>
+				<img src="./assets/Images/ecg.png" alt="ecg-logo" class="article_heading_logo">
+			</div>
+			<div class="dept-item-container">
+				<div class="col-sx-3">
+					<figure class="dept-item">
+						<a href="#">
+				      		<img src="./assets/Images/medicine.png" alt="medicine-logo" id="medicine_logo">
+				      		<figcaption class="dept-caption">Medicine</figcaption>
+				      	</a>
+				    </figure>
+				</div>
+				<div class="col-sx-3">
+					<figure class="dept-item">
+						<a href="#">
+		      				<img src="./assets/Images/brain.png" alt="neurology-logo" id="neurology_logo">
+		      				<figcaption class="dept-caption">Neurology</figcaption>
+		      			</a>
+		      		</figure>
+				</div>
+				<div class="col-sx-3">
+					<figure class="dept-item">
+						<a href="#">
+				      		<img src="./assets/Images/Gastroenterology.png" alt="gastrology-logo" id="gastrology_logo">
+				      		<figcaption class="dept-caption">Gastrology</figcaption>
+				      	</a>
+				    </figure>
+				</div>
+				<div class="col-sx-3">
+					<figure class="dept-item">
+						<a href="#">
+				      		<img src="./assets/Images/cardiology.png" alt="cardiology-logo" id="cardiology_logo">
+				      		<figcaption class="dept-caption">Cardiology</figcaption>
+				      	</a>
+				    </figure>
+				</div>
+				<div class="col-sx-3">
+					<div class="dept-item">
+						<a href="#">
+				      		<img src="./assets/Images/more.png" alt="more-logo" id="more_logo">
+				      	</a>
+				    </div>
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer>
 		<div class="dashed-line"></div>
