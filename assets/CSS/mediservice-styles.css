@@ -1,6 +1,8 @@
 *{
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
 	/*font-family: 'Open Sans', sans-serif;*/
 }
 /*css for toolbar*/
@@ -50,6 +52,7 @@
 .navbar-section{
 	display: inline-block;
 	width:100%;
+	height: auto;
 	min-height: 165px;
 	background-image: url('../Images/mediservice-Banner.jpg');
 	background-size: 100% 100%;
@@ -57,6 +60,9 @@
 	position: relative;
 }
 .navbar {
+	position: sticky;
+	top: 0;
+	/*z-index: 1;*/
 	width: 100%;
 	height: 60px;
   	padding: 12px 0;
@@ -110,7 +116,7 @@
 
 /*Css for choose-us article*/
 .choose-us{
-	padding: 25px 20px 25px;
+	padding: 25px 20px 0;
 }
 .article-body{
 	width: auto;
@@ -132,31 +138,40 @@
 	padding-top: 9px;
 	line-height: 1.7;
 	font-size: 15px;
+	text-align: justify;
 }
 .article-item-container{
-	padding: 10px 0 10px;
-	width: auto;
-	/*height: 80px;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .article-item_logo{
 	float: left;
-	width: 30px;
-	height: 35px;
+	width: 28px;
+	height: 32px;
+	display: inline-block;
 }
 .article-item-column{
-	width: 50%;
-	position: relative;
-	height: auto;
+	width: auto;
+	max-width: 50%;
+	margin-bottom: 20px;
+	padding-top: 10px;
 	display: inline-block;
-	float: left;
-	margin-bottom: 25px;
+	
 }
+.article-item-column a span{
+	display: inline-block;
+	text-align: center;
+}
+
 .article-item-column a{
 	font-size: 15px;
 	padding-left: 15px;
 	text-decoration: none;
 	color: #000000;
+	margin: auto;
 }
 .article-item-column a:hover{
 	color: #32B6CD ;
@@ -167,13 +182,13 @@
 /*CSS for Department*/
 .dept-container{
 	position: relative;
-	margin: 65px auto 10px;
-	padding: 20px 15px 0 15px;
+	margin: 20px auto 0;
+	padding: 0 15px 0 15px;
 	width: 100%;
 }
 .dept-header{
 	width: 100%;
-	padding-top: 30px;
+	padding-top: 12px;
 	color: #32B6CD;
 	text-align: center;
 }
@@ -182,12 +197,13 @@
 	font-size: 24px;
 }
 .dept-item-container{
-	padding: 20px;
+	padding: 10px 0 10px;
 	margin:auto;
 	text-align: center;
 }
 .dept-item{
 	margin: auto;
+	padding-top: 10px;
 }
 .dept-item img{
 	height:auto;
@@ -195,17 +211,20 @@
 }
 .dept-caption{
 	padding: 15px 0 10px 0;
-	color: #32B6CD;
-	font-size: 17px;
-	font-weight: bolder;
-	text-decoration: none;
 }
 .dept-caption:hover{
 	text-decoration: none;
 	color:#000000; 
 }
+.dept-caption a{
+	color: #32B6CD;
+	font-size: 17px;
+	font-weight: bolder;
+	text-decoration: none;
+}
 .dept-item a:hover{
 	text-decoration: none;
+	color:#000000;
 }
 #medicine_logo{
 	width:105px;
@@ -214,14 +233,13 @@
 	width: 70px;
 }
 #gastrology_logo{
-	width:100px;
+	width:110px;
 }
 #cardiology_logo{
 	width: 100px;
 }
 #more_logo{
-	width: 70px;
-	padding-top: 10px;
+	width: 75px;
 }
 /*end od Department*/
 
@@ -251,7 +269,9 @@ div{
 @media screen and (min-width: 567px){
 .navbar-section{
 	min-height: 335px;
+	height: auto;
 	background-size: 100% 100%;
+	max-height: 435px;
 }
 #navbar_supported_content {
     margin: 10px;
@@ -290,28 +310,15 @@ div{
 	max-height: 225px;
 	max-width: 200px;
 }
-.article-item-container{
-	width: auto;
-	display: flex;
-	justify-content: space-between;
-}
 .article-item-column{
-	width:auto;
-	height: auto;
-	margin-bottom: 5px;
+	width: auto;
+	max-width: 25%;
 }
 .dept-item-container{
 	width: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-.dept-container{
-	margin-top: 0;
-	padding-top: 0; 
-}
-.dept-header{
-	padding-top: 0;
 }
 }
 /*End of tablet media Query*/
@@ -320,6 +327,7 @@ div{
 @media screen and (min-width: 992px){
 .navbar-section{
 	min-height: 435px;
+	height: auto;
 	background-size: 100% 100%;
 }
 .article-image{
@@ -328,7 +336,6 @@ div{
 }
 .article-content-paragraph{
 	padding-right: 10px;
-	text-align: justify;
 }
 #article_body_logo{
 	padding:10px 0 0 20px;
@@ -343,3 +350,4 @@ div{
 	max-height:190px;
 }
 }
+/*end of media query for desktop*/
