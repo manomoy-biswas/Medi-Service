@@ -97,7 +97,6 @@
 }
 .nav-item a {
   	color: #ffffff;
-  	font-weight: 500px;
   	font-size: 16px;
   	text-decoration: none;
 }
@@ -115,7 +114,6 @@
 	width: auto;
 }
 #article_heading_text{
-	font-weight: 500px;
 	font-size: 23px;
 	display: inline-block;
 }
@@ -293,7 +291,7 @@ div{
 	float:right;
 	padding:10px 0 0 20px;
 	margin-left: 10px;
-	max-width: 200px
+	max-width: 200px;
 	max-height:225px;
 }
 .article-image{
